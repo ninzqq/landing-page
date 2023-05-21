@@ -3,15 +3,38 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    opacity: 100;
 }
 
-.header-bar-cont {
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+----------------------------------------------------
+HEADER SECTION
+----------------------------------------------------
+*/
+
+.header-cont {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 180px;
+    flex-direction: column;
+    padding: 0 200px;
     padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
 }
 
 .logo-text {
@@ -34,15 +57,15 @@ ul {
     gap: 24px;
 }
 
-.introduction-cont {
-    background-color: #1F2937;
+.header-info {
     display: flex;
-    padding: 48 180px;
+    justify-content: space-between;
     gap: 24px;
 }
 
 .intro-title {
     color: #F9FAF8;
+    font-size: 48px;
     padding: 0;
     margin: 16 0px;
 }
@@ -52,14 +75,8 @@ ul {
     flex-wrap: wrap;
 }
 
-.intro-left {
-    display: flex;
-    flex-direction: column;
-
-}
-
 .intro-image {
-    width: 360px;
+    width: 400px;
 }
 
 .intro-button {
@@ -78,6 +95,107 @@ ul {
     color:#1F2937
 }
 
+/*
+----------------------------------------------------
+SKILLZ SECTION
+----------------------------------------------------
+*/
+
+.skillz-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 180px;
+    padding-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.skill-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.skill-img {
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px;
+    background-color: aqua;
+}
+
+.skill-text {
+    font-size: 16px;
+}
+
+/*
+----------------------------------------------------
+INFORMATION SECTION
+----------------------------------------------------
+*/
+
 .information-cont {
     background-color: #E5E7EB;
+    padding: 48 180px;
+}
+
+.information-cont h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.information-cont h5 {
+    margin-right: 48px;
+    text-align: end;
+}
+
+/*
+----------------------------------------------------
+CONTACT SECTION
+----------------------------------------------------
+*/
+
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box {
+    background-color: #3882F6;
+    margin: 48 180px;
+    padding: 48 96px;
+    border-radius: 12px;
+    display: flex;
+    color: #E5E7EB;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-button {
+    width: 120px;
+    height: 32px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #E5E7EB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    background-color: #1F2937;
+    color: #E5E7EB;
 }
