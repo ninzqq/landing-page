@@ -191,6 +191,11 @@ CONTACT SECTION
     font-weight: bold;
 }
 
+.contact-button:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+}
+
 .footer {
     display: flex;
     justify-content: center;
